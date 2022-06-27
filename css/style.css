@@ -11,7 +11,7 @@
   text-align: center;
   text-shadow: #333 0 1px 0; }
 
-.red-box {
+.red-box,.red-box1 {
   float: left;
   width: 80px;
   height: 80px;
@@ -20,7 +20,7 @@
   color: #ffffff;
   background-color: #880000; }
 
-.green-box {
+.green-box,.green-box1 {
   float: left;
   width: 80px;
   height: 80px;
@@ -29,7 +29,7 @@
   color: #ffffff;
   background-color: #008800; }
 
-.blue-box {
+.blue-box,.blue-box1 {
   float: left;
   width: 80px;
   height: 80px;
