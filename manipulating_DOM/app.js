@@ -32,5 +32,40 @@ $(function () {
 
   // or
 
-  $("<div class='red-box'>More red</div>").replaceAll(".blue-box,.green-box");
+  // $("<div class='red-box'>More red</div>").replaceAll(".blue-box,.green-box");
+});
+
+//------------------------------------------removing
+
+$(function () {
+  // $("li").remove();
+  //remove all children of form, but not imput:text,br
+  // $("form").children().not("input:text,br").remove();
+  //using remove will remove all event handlers as well so if you want to store it and then attach somewere alse they wont work thats why you can use detach
+  // var dettachecItemList = $("li").detach();
+  // console.log(dettachecItemList);
+  //empty doesnt remove the element, but makes it empty and removes the child elements
+  // $(".red-box,.green-box,.blue-box").empty();
+});
+//-----------------------------------------manipulate atributes and properties
+
+// attr() - attributes (href, title, )
+// prop() - properties (for checked, select) - attrr wont work properly
+// val() - values (using to check password, or imputs elements when form submitted)
+$(function () {
+  let specialLink = $("#special-link");
+  console.log(specialLink.attr("href"));
+  specialLink.attr("href", "http://petersommerhoff.com");
+
+  let checBox = $("input:checkbox");
+  console.log(checBox.prop("checked"));
+  console.log(checBox.attr("checked"));
+
+  let inputValue = $("input:text");
+  console.log(inputValue.val());
+
+  let rangeValue = $("input[type ='range']");
+  console.log(rangeValue.val());
+
+  //if you are calling feinput:text and there is more of them, its just going to return first, not an array
 });
