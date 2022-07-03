@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://code.jquery.com/jquery-1.12.3.min.js"
+      integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+      integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>jQuery</title>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Project Structure</h1>
+      <h3>build in animations</h3>
+      <div class="container">
+        <div class="section">
+          <div class="red-box">Red</div>
+          <div class="green-box">Green</div>
+          <div class="blue-box">Blue</div>
+          <div class="clear"></div>
+        </div>
+        <form action="" id="form">
+          <input
+            type="text"
+            id="name"
+            placeholder="Name"
+            required
+            minlength="2"
+          />
+          <span id="name-feedback"></span><br />
+          <input type="email" placeholder="Email" id="email" />
+          <span id="email-feedback"></span><br />
+
+          <input type="checkbox" name="" id="checkbox" checked />
+          <input type="range" min="0" max="10" value="7" id="range" />
+          <label for="cb">Checkbox</label>
+          <span id="checkbox-feedback"></span>
+
+          <br />
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <span id="message-feedback"></span>
+
+          <br />
+          <select name="" id="select">
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+            <option value="">Option 4</option>
+          </select>
+          <input type="submit" value="Submit" />
+        </form>
+        <p><a id="special-link" href="/url"> Lorem ipsum</a> dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </body>
+</html>
